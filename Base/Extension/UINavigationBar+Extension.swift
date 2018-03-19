@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import UIKit
 
 var k_UINavigationBarExtensionKeyWraper = "k_UINavigationBarExtensionKeyWraper"
 extension UINavigationBar{

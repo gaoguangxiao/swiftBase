@@ -27,7 +27,7 @@ extension UIViewController{
         if let url = URL.init(string: "tel://\(tel)"),UIApplication.shared.canOpenURL(url) {
             UIApplication.shared.openURL(url)
         } else {
-            self.showHint("设备不支持")
+//            self.showHint("设备不支持")
         }
     }
     func push(_ vc:UIViewController, _ animated:Bool = true) {

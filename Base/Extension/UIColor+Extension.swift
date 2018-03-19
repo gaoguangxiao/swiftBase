@@ -6,7 +6,7 @@
 //  Copyright © 2017年 高广校. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 extension UIColor{
     static func RGBA(_ red:CGFloat,green:CGFloat,blue:CGFloat,alpha:CGFloat) -> UIColor  {

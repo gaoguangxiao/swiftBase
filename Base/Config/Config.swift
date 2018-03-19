@@ -7,6 +7,9 @@
 //
 
 import Foundation
+import UIKit
+
+//import SwiftyJSON
 struct Config {
     struct host{
         static let hostTag = "server"
@@ -32,8 +35,3 @@ typealias WdsBooleanResultBlock = (_ obj: Bool) -> Void
 typealias WdsArrayResultBlock = (_ obj : Array<Any>) -> Void
 typealias WdsDictionaryResultBlock = (_ obj:Dictionary<String, Any>) -> Void
 
-typealias WdsReceiveUserEntityResultBlock = (_ obj:ReceiveUserEntity) -> Void
-typealias WdsNoticeEntityResultBlock = (_ obj:NoticeEntity) -> Void
-
-typealias WdsReplyListEntityResultBlock = (_ obj : ReplyListEntity) -> Void
-typealias WdsClassCircleEntityResultBlock = (_ submitCircleData:ClassCircleEntity)-> Void

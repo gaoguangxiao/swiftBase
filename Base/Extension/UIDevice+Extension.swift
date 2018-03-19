@@ -6,7 +6,8 @@
 //  Copyright © 2017年 高广校. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
 extension UIDevice {
     public func isIPhoneX() -> Bool {
         if UIScreen.main.bounds.height == 812 {

@@ -140,9 +140,9 @@ extension DataRequest{
     {
         let rootViewController = (UIApplication.shared.delegate as! AppDelegate).window?.rootViewController
         if showAnimation , !title.isEmpty {
-            rootViewController?.showHud(in: rootViewController?.view, hint: title)
+//            rootViewController?.showHud(in: rootViewController?.view, hint: title)
         }else if showAnimation {
-            rootViewController?.showHud(in: rootViewController?.view, hint: "")
+//            rootViewController?.showHud(in: rootViewController?.view, hint: "")
         }
         
         
@@ -152,7 +152,7 @@ extension DataRequest{
             var errorString:String?
             var code : WDSServiceCode?
             
-            rootViewController?.hideHud()
+//            rootViewController?.hideHud()
             print("链接地址:",response.request?.url)
             if response.result.isSuccess {
                 var json = JSON(myResponse.result.value!)
@@ -186,7 +186,7 @@ extension DataRequest{
                 }()
                 myResponse = testResponse
                 
-                rootViewController?.showHint(errorString, yOffset: 0)
+//                rootViewController?.showHint(errorString, yOffset: 0)
 //                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0, execute: {
 //                    for itesm in  (UIApplication.shared.keyWindow?.subviews)!{
 //                        if itesm is MBProgressHUD{
@@ -298,7 +298,7 @@ class HttpManager{
                             }()
                             myResponse = testResponse
                             
-                            rootViewController?.showHint(errorString, yOffset: 0)
+//                            rootViewController?.showHint(errorString, yOffset: 0)
                             
                         }
 

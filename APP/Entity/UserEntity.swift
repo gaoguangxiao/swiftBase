@@ -8,19 +8,17 @@
 
 import Foundation
 import SwiftyJSON
-class UserCenterEntity : ObjectEntity{
+class UserEntity : ObjectEntity{
     var avatar : String = ""
     var mobile : String = ""
     var user_name : String = ""
     var position : String = ""
     var class_teacher : String = ""
+    var id : String = ""
     
     override static func getObjectFromDic(dic: JSON) -> ObjectEntity {
-        let s = UserCenterEntity()
-        //        s.avatar = dic["avatar"].stringValue
-        //        if s.avatar.characters.count > 0 {
-        //            /data/avatar/" + id + ".png"
-        //        http://zxapp.test2.yikeapp.cn/data/avatar/14.png"
+        let s = UserEntity()
+
         if dic["id"].stringValue.characters.count > 0 {
             s.avatar =  dic["id"].stringValue.withHostUserLogo
         }else{

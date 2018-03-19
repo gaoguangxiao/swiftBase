@@ -9,7 +9,6 @@
 #ifndef wisdomstudy_Bridging_Header_h
 #define wisdomstudy_Bridging_Header_h
 
-#import "EaseUI.h"
 
 //#import "TPKeyboardAvoidingTableView.h"
 #endif /* wisdomstudy_Bridging_Header_h */
